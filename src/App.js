@@ -23,6 +23,7 @@ function App() {
     animationPercentage: 0,
   })
   const [libraryStatus, setLibraryStatus] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   // ref
   const audioRef = useRef(null);
@@ -51,10 +52,12 @@ function App() {
   }
 
   return (
-    <div className={`App ${libraryStatus ? 'library-active' : ''}`}>
+    <div className={`App ${libraryStatus ? 'library-active' : ''} ${darkMode ? 'dark-active' : ''}`}>
       <Nav 
         libraryStatus={libraryStatus}
         setLibraryStatus={setLibraryStatus}
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
       />
       <Song 
         currentSong={currentSong} 
@@ -79,6 +82,7 @@ function App() {
         isPlaying={isPlaying}
         setSongs={setSongs}
         libraryStatus={libraryStatus}
+        darkMode={darkMode}
       />
 
       <audio
