@@ -10,7 +10,7 @@ import Nav from './componets/Nav';
 import Player from './componets/Player';
 import Song from './componets/Song';
 import Library from './componets/Library';
-import { activeLibraryHandler } from './styles/util';
+import { activeLibraryHandler } from './componets/util';
 
 function App() {
   // state
