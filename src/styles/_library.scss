@@ -21,6 +21,7 @@
     padding: 1rem 2rem;
     cursor: pointer;
     transition: 0.2s all ease-in-out;
+    
     img {
         width: 30%;
     }
@@ -59,11 +60,18 @@
 
 .selected {
     background: rgb(145, 198, 230);
+    -webkit-box-shadow: inset 5px 5px 9px 1px rgba(0,0,0,0.5); 
+    box-shadow: inset 5px 5px 9px 1px rgba(0,0,0,0.5);
 }
 
 .active-library {
     transform: translateX(0%);
     opacity: 1;
+}
+
+.dark-active {
+    background: black;
+    color: rgb(236, 236, 236);
 }
 
 @media screen and (max-width: 768px) {

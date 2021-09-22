@@ -5,12 +5,10 @@ nav {
     justify-content: space-around;
     align-items: center;
 
-    button {
-        //background: transparent;
+    .btn {
         border: 0;
         cursor: pointer;
         border: 2px solid;
-        //border-color: rgb(65, 65, 65);
         padding: 0.5rem;
         transition: all 0.3s ease;
         margin-left: 0.5em;
@@ -18,9 +16,26 @@ nav {
         svg {
             margin-left: 0.2rem;
         }
+    }
 
+    // Dark Theme
+    .btn-dark {
+        background: black;
+        color: white;
+        border-color: white;
         &:hover {
-            background: rgb(65, 65, 65);
+            background: white;
+            color: black;
+        }
+    }
+
+    // Light Theme
+    .btn-light {
+        background: white;
+        color: black;
+        border-color: black;
+        &:hover {
+            background: black;
             color: white;
         }
     }
@@ -28,8 +43,9 @@ nav {
 
 @media screen and (max-width: 768px) {
     nav {
-        button {
-            z-index: 10;
+        .btn {
+            border: 1px solid;
         }
+        
     }
 }
