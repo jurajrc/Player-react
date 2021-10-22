@@ -1,6 +1,6 @@
 ## Can you use this app
 
-Open [http://daniellaart.6f.sk/](Player-app)
+Open [Player-app](http://daniellaart.6f.sk)
 
 # Getting Started with Create React App
 
