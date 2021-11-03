@@ -9,7 +9,7 @@ const Nav = ({ libraryStatus, setLibraryStatus, darkMode, setDarkMode }) => {
 
     return (
         <nav>
-            <h1>Waves</h1>
+            <h1>Player</h1>
             <div style={{zIndex: 10}}>
                 <button className={`btn ${darkMode ? 'btn-dark' : 'btn-light'}`} onClick={() => setLibraryStatus(!libraryStatus)} >
                     Library
